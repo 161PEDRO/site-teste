@@ -3,54 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PO TECH </title>
+
+  <!-- Ícones (WhatsApp) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>PO TECH</title>
+
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("ChatGPT\ Image\ 3\ de\ nov.\ de\ 2025\,\ 21_06_51.png") center/cover no-repeat fixed;
-  /* fixed = efeito de fundo contínuo */
+  background: url("ChatGPT Image 3 de nov. de 2025, 21_06_51.png") center/cover no-repeat fixed;
   color: #e5e7eb;
 }
 
-/* HEADER sem fundo */
+/* HEADER */
 header {
   text-align: center;
   padding: 40px 20px;
   background: transparent;
 }
-
 header img {
   width: 110px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
 header h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #60a5fa;
 }
 
-/* HERO transparente, apenas sombra para leitura */
+/* HERO */
 .hero {
   padding: 120px 20px;
   text-align: center;
   color: #fff;
-  background: rgba(0,0,0,0.45); /* leve escurimento para destaque */
+  background: rgba(0,0,0,0.45);
   backdrop-filter: blur(4px);
 }
 
-.hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-}
-
-/* TABELA transparente também */
+/* TABELA */
 table {
   width: 90%;
   margin: 40px auto;
@@ -60,19 +53,17 @@ table {
   border-radius: 10px;
   overflow: hidden;
 }
-
 th, td {
   padding: 14px;
   border-bottom: 1px solid rgba(255,255,255,0.15);
   text-align: left;
 }
-
 th {
   background: rgba(0,0,0,0.55);
   color: #60a5fa;
 }
 
-/* SOBRE também transparente */
+/* SOBRE */
 .sobre {
   text-align: center;
   padding: 50px 25px;
@@ -83,40 +74,50 @@ th {
   margin: 40px auto;
 }
 
-.sobre p {
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.7;
-}
-
-/* WHATSAPP */
+/* BOTÃO WHATSAPP */
 .whatsapp {
   text-align: center;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 .whatsapp a {
-  background: #60a5fa;
-  padding: 15px 25px;
-  border-radius: 8px;
+  background: #10b981;
+  padding: 12px 22px;
+  border-radius: 40px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: 0.3s;
+}
+
+.whatsapp a i {
+  font-size: 1.3rem;
 }
 
 .whatsapp a:hover {
   background: #059669;
 }
 
+/* Ajuste para CELULAR */
+@media (max-width: 600px) {
+  .whatsapp a {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+  .whatsapp a i {
+    font-size: 1.1rem;
+  }
+}
 </style>
 </head>
 <body>
 
 <header>
   <img src="WhatsApp Image 2025-10-20 at 23.31.07.jpeg" alt="PO TECH Logo">
-  <h1>PO TECH </h1>
+  <h1>PO TECH</h1>
 </header>
 
 <section class="hero">
@@ -126,7 +127,7 @@ th {
 
 <table>
   <tr><th>Serviço</th>
-  <tr><td>Formatação completa + otimização de desempenho</tr>
+  <tr><td>Formatação completa + otimização de desempenho</td>
   <tr><td>Limpeza interna + pasta térmica premium</td>
   <tr><td>Troca de HD para SSD + migração de dados</td>
   <tr><td>Upgrade de peças (RAM, SSD, Wi-Fi, etc.)</td>
@@ -142,8 +143,11 @@ th {
 </section>
 
 <section class="whatsapp">
-  <a href="https://wa.me/5531996998299" target="_blank">💬 Agendar Atendimento no WhatsApp</a>
+  <a href="https://wa.me/5531996998299" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> Agendar no WhatsApp
+  </a>
 </section>
 
 </body>
 </html>
+
